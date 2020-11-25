@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#body, html {
+    margin: 0;
+    padding: 0;
+    
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+#ome{
+    background-color: orange;
+    background-image: url("../images/k1.jpg");
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size: 650px;
+    background-attachment: fixed;
+    height: 650px;
+    width: 100%;
+    overflow-x: hidden;
+}
+#home #background{
+    background-color: #29293d;
+    background-image: url("bluetech.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 650px;
+    height: 650px;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+#home #background #nav{
+    width: 100%;
+	height: 69px;
+	position: fixed;
+	z-index: 1;
+}
+.display{
+    background-color: #000033;
+}
+#home #background #nav #nav-logo a{
+    color: white;
+	position: absolute;
+	left: 5%;
+    font-size: 40px;
+    font-family: 'Rakkas', cursive;
+    text-decoration: none;
+}
+#home #background #nav #nav-text{
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 45%;
+    top: 27%;
+    
+}
+#home #background #nav #nav-text a{
+    font-size: 21px;
+    font-family: sans-serif;
+    color: white;
+    padding-left: 38px;
+    font-weight: 550;
+    text-decoration: none;
+}
+#home #background #nav #nav-text a:hover{
+    color: orangered;
+}
+#home #background #nav .icon{
+    color: white;
+    font-size: 33px;
+    float: right;
+    margin-right: 4%;
+    display: none;
+    margin-top: 3%;
+    
+}
+#home #background #nav #my_sidenav{
+    height: 100%;
+    width: 0px;
+    position:fixed;
+    z-index: 6;
+    right: 0;
+    top:0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.7s;
+    box-sizing: border-box;
+    padding-left: 0%;
+    padding-top: 8%;
+
+}
+#home #background #nav span{
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 6%;
+}
+#home #background #nav #a{
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 22px;
+    line-height: 45px;
+    padding-left: 6%;
+}
+#home #background #nav #a:hover{
+    color: green;
+}
+#header_img_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    
+}
+#header_img_container_overlay{
+    display: flex;
+    padding: 0px 0px 100px 10px;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    position: absolute;
+    left: 300px;
+}
+.header #welcome {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 40px;
+    letter-spacing: 0.5em;
+    margin: 0px 0px 18px 0px;
+}
+
+.header #welcome_two {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 97px;
+    letter-spacing: 0.1em;
+    max-width: 822px;
+    margin: 0px 0px 18px 0px;
+}
+
+.header #welcome_three {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 45px;
+    max-width: 632px;
+    margin: 0px;
+}
+
+#header_img{
+    width: auto;
+    height: 650px;
+}
+#padding p{
+    text-align: justify;
+    line-height: 32px;
+    font-size: 16px;
+    margin-top: 34px;
+}
+#padding2 span{
+    line-height: 32px;
+}
+.card{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.contact-links{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.contact-links a{
+font-size: 25px;
+}
+footer{
+    text-align: center;
+    min-height: 52px;
+    background-color: #000033;
+    color: #fff;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-top: 3px solid orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    #home #background #nav #nav-text a{
+        display: none;
+    }
+    #home #background #nav .icon{
+        display: block;
+    }
+    #home #background #nav #nav-logo a{
+    color: white;
+	position: absolute;
+	left: 4%;
+    font-size: 33px;
+    margin-top: 2%;
+}
+    #home #background #background-text{
+    color: white;
+    position: absolute;
+    top: 360px;
+    left: 100px;
+}
+    #home #background #background-text h5{
+        font-size: 25px;
+    }
+    #home #background #background-text h2{
+        font-size: 35px;
+    }
+    #home #background #background-text h1{
+        font-size: 45px;
+    }
+}
+
+
+
+@media (max-width: 1028px){
+   #home #background #nav #nav-text a{
+    font-size: 20px;
+    padding-left: 34px;
+}
+#home #background #nav #nav-text{
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 30%;
+    top: 32%;
+    }
+    
+    
+}
+@media(max-width: 900px){
+    #header_img_container_overlay{
+    display: flex;
+    padding: 0px 0px 100px 10px;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    position: absolute;
+    left: 67px;
+}
+    .header #welcome {
+        font-size: 16px;
+        line-height: 40px;
+        margin: 62px 0px 7px 0px;
+    }
+
+    .header #welcome_two {
+        font-size: 35px;
+        line-height: 40px;
+        max-width: 300px;
+        margin: 0px 0px 12px 0px;
+    }
+
+    .header #welcome_three {
+        font-size: 19px;
+        line-height: 30px;
+        max-width: 367px;
+        margin: 0px 18px 41px 0px;
+    }
+}
